@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,600;1,300;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 55% auto;
+}
+.navigasiContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-right: 1px solid white;
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logo img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.logo a{
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+.listnav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+}
+.listnav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 300;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.listnav li{
+    display: flex;
+    gap: 10px;
+}
+.listnav li i{
+    font-size: .8em;
+}
+.listnav li a:hover,.listnav li i:hover,.bussineslist i:hover,.navigasilist .col:hover,.plus:hover{
+    opacity: 0.5;
+}
+.mainContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+navigasicontent{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.navigasiBussines{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.bussinesjudul{
+    font-size: 1.5em;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: rgb(71, 71, 228);;
+}
+.bussineslist{
+    display: flex;
+    gap: 20px;
+}
+.bussineslist i{
+    padding: 10px;
+    border-radius: 5px;
+    color:rgb(71, 71, 228);;
+    background-color: white;
+    box-shadow: 0 2px 1px gray;
+    font-size: 1em;
+}
+.navigasilist{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.navigasilist .col{
+    padding: 5px 10px;
+    width: 150px;
+    height: 65px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: start;
+    align-items: start;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(71, 71, 228);
+}
+.navigasilist .col h3{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.navigasilist .col p{
+    font-size: .9em;
+}
+.mainmarketplace{
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.judulmarketplace{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+.contentpertama{
+    display: flex;
+    flex-direction: column;
+}
+.contentpertama,.contentkedua{
+    cursor: pointer;
+}
+.maincontent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% auto;
+    gap: 10px;
+}
+.contentpertama{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.teks{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.teksharga p:nth-child(2){
+    font-size: .7em;
+    font-weight: 100;
+    margin-top: 8px;
+}
+.data,.diagram{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.data img,.diagram img{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+.contentkedua{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    border-radius:5px;
+    cursor: pointer;
+}
+.contentdolar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.contentdolarteks{
+    text-align: center;
+}
+.contentkedua h3{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.contentkedua img{
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    border: none;
+}
+.recentcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.recenttop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.recentvalue{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 20px;
+}
+.colrecent b{
+    font-size: .9em;
+}
+.colrecent p{
+    font-weight: 100;
+    font-size: .8em;
+}
+.suscces{
+color: red;
+}
+.faild{
+    color: greenyellow;
+}
+.colrecent{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(52, 52, 243);
+    align-items: center;
+   padding-top: 10px;
+}
+.aboutContainer{
+    padding: 35px 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contentaboutone,.activity{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.judul{
+    text-transform: capitalize;
+}
+.summarycontent{
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 2px 1px gray;
+}
+.colsummary{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+.top i{
+    color: greenyellow;
+}
+.bottom i{
+    color: red;
+}
+.top,.bottom{
+    display: flex;
+    gap: 20px;
+}
+.plus{
+    padding: 5px;
+    border-radius:10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.topactivity{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+.mainactivity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.contentactivity{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.mainactivity i{
+    padding: 15px;
+    border-radius: 5px;
+    background-color:rgb(82, 82, 236);
+    color: white;
+}
+.teksactivity{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.categoricontent{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.categoricontent p{
+    font-size: .8em;
+    font-weight: 100;
+}
+.maincategori{
+    display: flex;
+    gap: 20px;
+    padding: 5px 20px;
+}
+.footwears,.accsesory{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 10px;
+    background-color: orange;
+}
+.bars{
+    display: none;
+}
+.bars i{
+    font-size: 2em;
+}
+@media only screen and (max-width: 992px) {
+    .navigasiContainer{
+        padding: 20px 0;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+  .mainContainer,.aboutContainer{
+        width: 100%;
+        height: 100%;
+    }
+    .navigasiContainer{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigasiContainer .listnav{
+        position: none;
+    }
+    .navigasiContainer .listnav ul{
+        display:flex;
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .navigasiContainer{
+        display: none;
+    }
+    .navigasiContainer.active{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: rgb(64, 64, 228);
+    }
+    .bars{
+        display: flex;
+        position:absolute;
+        top: 80px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .navigasilist{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainmarketplace{
+        height: 100%;
+    }
+    .maincontent{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    body{
+        height: 100%;
+    }
+}
